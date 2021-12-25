@@ -6,12 +6,13 @@ for (let i = 1; i <= 100; i++) {
     bgContainer.append(spanElement);
 }
 
-
 bgContainer.childNodes.forEach(item => {
     item.addEventListener('mouseover', event => {
         item.style.zIndex = '2'
         item.style.transform = 'translateY(200vh) rotate(360deg)'
         item.style.opacity = 0
-        console.log("item")
+
+        console.log("Your time is limited, so don't waste it living someone else's life.")
+
     })
 })
